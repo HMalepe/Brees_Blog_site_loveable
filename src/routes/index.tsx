@@ -19,8 +19,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   useEffect(() => {
-    if (document.documentElement.dataset.breeMotion === "ready") return;
-    document.documentElement.dataset.breeMotion = "ready";
+    if (document.documentElement.dataset["breeMotion"] === "ready") return;
+    document.documentElement.dataset["breeMotion"] = "ready";
 
     const sources = [
       "/bree/vendor/gsap.min.js",
